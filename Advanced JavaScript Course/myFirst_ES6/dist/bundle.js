@@ -1,0 +1,1 @@
+(() => { "use strict"; const t = new class { constructor(t, s, i, n) { this.name = t, this.protein = s, this.carbs = i, this.fat = n } toString() { return `${this.name} | ${this.protein}g P:: ${this.carbs}g C :: ${this.fat}g F` } print() { console.log(this.toString()) } }("Chicken Breast", 26, 0, 3.5); t.print(), console.log(t.protein) })();
