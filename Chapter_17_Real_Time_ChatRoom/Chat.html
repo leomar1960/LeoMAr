@@ -61,9 +61,29 @@
         </form>
     </div>
 
-    <script src="Chapter_17_Real_Time_ChatRoom/scripts/app.js"></script>
-    <script src="Chapter_17_Real_Time_ChatRoom/scripts/Chat.js"></script>
-    <script src="Chapter_17_Real_Time_ChatRoom/scripts/ui.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyBD-E5dyvXD8psPe3ES9n4FcGOG7DW0OCQ",
+            authDomain: "udemy-modern-javascript-57b0a.firebaseapp.com",
+            projectId: "udemy-modern-javascript-57b0a",
+            storageBucket: "udemy-modern-javascript-57b0a.appspot.com",
+            messagingSenderId: "856442245360",
+            appId: "1:856442245360:web:2bbc5933c44baa76343235",
+            measurementId: "G-TYM8HZBH9Z"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="scripts/Chat.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>
