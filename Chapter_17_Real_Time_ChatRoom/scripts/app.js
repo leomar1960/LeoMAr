@@ -1,11 +1,13 @@
 // dom queries
+// this when you extract the html elements which i want to listen 
 const chatList = document.querySelector('.chat-list')
 const newChatForm = document.querySelector('.new-chat');
 const newNameForm = document.querySelector('.new-name');
 const updateMssg = document.querySelector('.update-mssg');
 const rooms = document.querySelector('.chat-rooms');
 
-
+///////////////////////////////////////////////////////////////////////
+// this is what hapeesn when the users engage
 //add a new chat
 newChatForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -40,7 +42,8 @@ rooms.addEventListener('click', e =>{
    chatroom.getChats( chat => { chatUI.render(chat)})
 
 })
-
+/////////////////////////////////////////////////////////////////////
+//this is where the code starts
 //check local storage for a name
 const username = localStorage.username ? localStorage.username:'anon';
 
