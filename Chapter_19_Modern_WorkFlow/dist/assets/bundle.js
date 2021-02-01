@@ -1,9 +1,1 @@
-"use strict";
-
-var greet = function greet(name) {
-  console.log("hello ".concat(name));
-};
-
-greet('mario');
-greet('link');
-greet('link');
+(()=>{"use strict";document.querySelector("body");const e=[{name:"mario",premium:!0},{name:"luigi",premium:!1},{name:"yoshi",premium:!0},{name:"toad",premium:!0},{name:"peach",premium:!1}],m=(e=>e.filter((e=>e.premium)))(e);console.log(e,m)})();

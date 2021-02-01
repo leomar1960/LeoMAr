@@ -1,16 +1,21 @@
 {
-  "name": "chapter_19_modern_workflow",
+  "name": "chapter_19",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-  "babel":"/Users/leonidasmaratsis/Desktop/LeoMAr/node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js"
+    "babel": "node_modules/.bin/babel ./src/index.js -w -o ./dist/assets/bundle.js",
+    "webpack": "node_modules/.bin/webpack -w",
+    "serve": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11"
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
   }
 }
