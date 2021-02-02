@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "babel": "node_modules/.bin/babel ./src/index.js -w -o ./dist/assets/bundle.js",
     "webpack": "node_modules/.bin/webpack -w",
     "serve": "webpack-dev-server"
   },
