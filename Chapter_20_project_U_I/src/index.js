@@ -1,4 +1,4 @@
-import Tooltip from './ninja-ui/styles/tooltip';
+import Tooltip from './tooltip';
 
 const tooltip = new Tooltip (document.querySelector('.tooltip'));
 
