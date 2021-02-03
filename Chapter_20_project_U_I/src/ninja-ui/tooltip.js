@@ -1,4 +1,5 @@
-import './ninja-ui/styles/tooltip.css';
+import './styles/tooltip.css';
+
 
 class Tooltip{
     constructor(element){
